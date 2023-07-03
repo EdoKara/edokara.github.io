@@ -4,7 +4,7 @@
     permalink: /About
 ---
 
-# edokara.github.io
+# About Me
 Repository containing files for my personal website/portfolio. 
 
 Testing out *markdown* features. **Seeing if this works without using HTML stuff**. 
