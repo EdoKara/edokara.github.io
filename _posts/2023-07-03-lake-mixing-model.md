@@ -12,4 +12,5 @@ Rust appeals to me for this project because of its potential performance; this c
 
 ## Current State
 
-I'm working on adding in solar radiative forcing, which starts with solar position and exposure-hours. To start with I'm using some [helpful equations from NOAA](https://gml.noaa.gov/grad/solcalc/calcdetails.html#:~:text=The%20calculations%20in%20the%20NOAA%20Sunrise%2FSunset%20and%20Solar,and%20within%2010%20minutes%20outside%20of%20those%20latitudes.) 
+I'm working on adding in solar radiative forcing, which starts with solar position and exposure-hours. To start with I'm using some [helpful equations from NOAA](https://gml.noaa.gov/grad/solcalc/calcdetails.html#:~:text=The%20calculations%20in%20the%20NOAA%20Sunrise%2FSunset%20and%20Solar,and%20within%2010%20minutes%20outside%20of%20those%20latitudes.) which describe the position of the sun based on julian day/century and the 
+trigonometry of solar positions.
