@@ -36,10 +36,10 @@ distribution of future weather and that each day's weather was an independent no
 for additional work, since independence doesn't really hold for weather time series data. I would also use a more performant generation technique to add a lot more data to the 
 simulation, which would allow a much smoother final envelope. 
 
-![Simulated Temperature Data](/Assets/Temp_Sim_Dist.png)
+<p align="center">![Simulated Temperature Data](/Assets/Temp_Sim_Dist.png)</p>
 
 The simulated temperature data was then used to generate a distribution of required residence times and storage volumes for the constructed wetland to handle the nitrate 
 emitted from my design event. 
 
-![Nitrate Abatement Distribution](/Assets/Nitrate_Abatement_distribution.png)
+<p align="center">![Nitrate Abatement Distribution](/Assets/Nitrate_Abatement_distribution.png)</p>
 
