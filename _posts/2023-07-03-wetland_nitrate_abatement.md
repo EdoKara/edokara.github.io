@@ -16,8 +16,8 @@ This project came partially from my work with the Geography Department at IU, wh
 I developed both stream-density and land-use maps from the project's geodatabase to inform my analysis, and coupled them with [stream gauge data](https://dashboard.waterdata.usgs.gov/app/nwd/en/?region=lower48&aoi=default) from
 the USGS. 
 
-![Land Use Map of the Driftwood Watershed](/Assets/Crop_Map_1.jpg)
-![Stream Network Map of the Driftwood Watershed](/Assets/Watershed_map_1.jpg)
+<p align="center">![Land Use Map of the Driftwood Watershed](/Assets/Crop_Map_1.jpg)</p>
+<p align="center">![Stream Network Map of the Driftwood Watershed](/Assets/Watershed_map_1.jpg)</p>
 
 My visual style decisions for this mapping project were based upon expediency; this project was completed in three weeks, and GIS was only an initial part of the analytical
 procedure. I tried to keep it simple while remaining understandable. 
