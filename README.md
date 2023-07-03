@@ -1,10 +1,23 @@
+[
+    layout: page
+    title: "About"
+    permalink: /About
+]
+
 # edokara.github.io
 Repository containing files for my personal website/portfolio. 
 
-<html>
-<head>
-<title>Andrew Brown</title>
-</head>
+Testing out *markdown* features. **Seeing if this works without using HTML stuff**. 
+
+## Subtitle - Code block
+
+``` 
+let mut Pages: Vec<(f64, f64)> = (1,1) 
+```
+
+### subsubtitle - project with image 
+
+***
 
 
-</html>
+
