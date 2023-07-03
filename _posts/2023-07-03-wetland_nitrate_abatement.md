@@ -16,8 +16,8 @@ This project came partially from my work with the Geography Department at IU, wh
 I developed both stream-density and land-use maps from the project's geodatabase to inform my analysis, and coupled them with [stream gauge data](https://dashboard.waterdata.usgs.gov/app/nwd/en/?region=lower48&aoi=default) from
 the USGS. 
 
-<p align="center">![Land Use Map of the Driftwood Watershed](/Assets/Crop_Map_1.jpg)</p>
-<p align="center">![Stream Network Map of the Driftwood Watershed](/Assets/Watershed_map_1.jpg)</p>
+![Land Use Map of the Driftwood Watershed](/Assets/Crop_Map_1.jpg)
+![Stream Network Map of the Driftwood Watershed](/Assets/Watershed_map_1.jpg)
 
 My visual style decisions for this mapping project were based upon expediency; this project was completed in three weeks, and GIS was only an initial part of the analytical
 procedure. I tried to keep it simple while remaining understandable. 
@@ -36,10 +36,10 @@ distribution of future weather and that each day's weather was an independent no
 for additional work, since independence doesn't really hold for weather time series data. I would also use a more performant generation technique to add a lot more data to the 
 simulation, which would allow a much smoother final envelope. 
 
-<p align="center">![Simulated Temperature Data](/Assets/Temp_Sim_Dist.png)</p>
+![Simulated Temperature Data](/Assets/Temp_Sim_Dist.png)
 
 The simulated temperature data was then used to generate a distribution of required residence times and storage volumes for the constructed wetland to handle the nitrate 
 emitted from my design event. 
 
-<p align="center">![Nitrate Abatement Distribution](/Assets/Nitrate_Abatement_distribution.png)</p>
+![Nitrate Abatement Distribution](/Assets/Nitrate_Abatement_distribution.png)
 
