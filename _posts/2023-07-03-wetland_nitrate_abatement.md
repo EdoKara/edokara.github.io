@@ -67,7 +67,9 @@ especially with nonconductive soils like those typically found in southern India
 
 This project was a very rewarding one, as it allowed me to practice developing modeling to answer design questions semi-independently. MI also found the process of documenting behavior in the face of uncertainty to be 
 highly rewarding, and allowed me to explore the dimensions of the problem in a more naunced way. This project also let me think through the practical challenges to processsing nitrate in polluted agricultural wetlands, 
-and changed my views on the utility of wetland restoration for nutrient pollution abatement, helping me understand its limitations in the real world.  
+and changed my views on the utility of wetland restoration for nutrient pollution abatement, helping me understand its limitations in the real world. 
+
+A complete PDF of the project can be found [Here](/Assets/Environmental_Engineering_Project_Report.pdf).
 
 
 
