@@ -24,5 +24,5 @@ Because Dr. Hansen's setup does not measure through nafion, we were able to use 
 
 # Outcomes
 
-This was a great experience for me. As a first foray into circuit design, I learned a lot in the week that this project took to implement. This project has given me a great foundation on circuit interpretation and design, and more confidence in the future when I want to create a custom-designed instrument. 
+This was a great experience for me. As a first foray into circuit design, I learned a lot in the week that this project took to implement. This project has given me a great foundation on circuit interpretation and design, and more confidence in the future when I want to create custom-designed tools and circuits. 
 
