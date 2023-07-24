@@ -43,3 +43,33 @@ emitted from my design event.
 
 ![Nitrate Abatement Distribution](/Assets/Nitrate_Abatement_distribution.png)
 
+While the bulk of acreages and residence times fall below 10000 acres/3 days, the rightward tail is still a substantial part of the distribution. My analytical heuristic was to reject any area over 10,000 acres as
+infeasible, because of the financial and resource cost to construct such a wetland. Wetlands of about 10,000 acres [exist in Indiana](https://www.in.gov/dnr/fish-and-wildlife/properties/goose-pond-fwa/) but are rare. 
+The right tail of this distribution describes all of the winter/spring/fall storms that occur closer to freezing. 
+
+## Buffer Strip Model
+
+My buffer strip model was derived from the same nitrate reduction equations used in the plug flow reactor above, coupled with a transport function from 1-d groundwater flow. 
+This was a great opportunity for me to practice model development, and let me use skills from two areas to achieve a more sophisticated approximation (emphasis on the approximation)
+of the nutrient processing capabilities of subsurface flow. 
+
+The model is based on the equation for 1-d groundwater flow because I assumed that within a certain radius of a stream, all groundwater flow was unidirectional and towards the stream. By further assuming 
+that riparian edges would be uniform, and neglecting any hyporheic exchange, I could model the buffer's capacity as the sum of a series of small slices. 
+
+![Visual Representation of 1-d Groundwater Flow Model](/Assets/gw_flow_screenshot.png)
+
+I coupled the equation for groundwater flow with that of a plug flow reactor to determine the length needed to process the total mass of nitrate from the design flow. This was a really rewarding derivation despite the 
+simplifications I made to get to an answer in a reasonably short amount of time. I later learned that my assumption that nitrate was processed in the very shallow subsurface is wrong; really groundwater needs to infiltrate
+deeper than I was modeling in order to start denitrifying, which limits processing capacity below what I predicted. I additionally excluded infiltration dynamics, which are important to consider in a less idealized system, 
+especially with nonconductive soils like those typically found in southern Indiana. 
+
+## Conclusions
+
+This project was a very rewarding one, as it allowed me to practice developing modeling to answer design questions semi-independently. MI also found the process of documenting behavior in the face of uncertainty to be 
+highly rewarding, and allowed me to explore the dimensions of the problem in a more naunced way. This project also let me think through the practical challenges to processsing nitrate in polluted agricultural wetlands, 
+and changed my views on the utility of wetland restoration for nutrient pollution abatement, helping me understand its limitations in the real world. 
+
+A complete PDF of the project can be found [Here](/Assets/Environmental_Engineering_Project_Report.pdf).
+
+
+
