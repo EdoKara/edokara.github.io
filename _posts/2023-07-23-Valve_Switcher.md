@@ -10,11 +10,13 @@ As part the [Raff Lab's](https://raff.lab.indiana.edu/index.html) field sampling
 
 Our experimental setup includes two NOx analyzers. Our group's instrument is coupled with a 5-way valve switcher programmed to sample 3 heights above the ground. Because our instrument is measuring HONO through catalytic nafion converters (see [this paper from our group](https://pubs.acs.org/doi/10.1021/acs.est.2c05944) for more) we needed additional valves in order to sample from six lines (two per position), adding complication to the procedure. Earlier this summer, I used the PACControl suite to program our instrument's valve switching assembly to correctly sample each height. 
 
-Dr. Hansen's NOx analyzer is designed to measure NO using a similar methodology and was introduced as a background signal for each of our measurements. However, Dr. Hansen's assembly, although integrated into our tubing setup, lacked an automated valve changer to switch between levels automatically. Doing so would thus cost us days of lab time with manual switching. 
+Dr. Hansen's NOx analyzer is designed to measure NO using a similar methodology and was introduced as an independent background signal for each of our measurements. However, Dr. Hansen's assembly, although integrated into our tubing setup, lacked a valve changer to switch between levels automatically. Doing so would thus cost us days of lab time with manual switching. 
 
 # The Solution
 
-To solve this problem, I worked with Dr. Hansen, as well as Ph.D. candidates Liz Melissen and Evan Dalton, to design and build an electronic circuit, backed by a microcontroller, to control automated valve switching. 
+To solve this problem, I worked with Dr. Hansen, as well as Ph.D. candidates Liz Melissen and Evan Dalton, to design and build an electronic circuit, backed by a microcontroller, to automate the switching process.
+
+The control program is hosted on the same computer that Dr. Hansen's instruments are reading to. That computer's time must be offest to account for the lag between the real time (the host computer which is connected to the internet) and the time on the other NOxWerx, which controls our stack of valve switchers to synchronize to, and which the OPTO IC syncs to. 
 
 ## Programming
 
