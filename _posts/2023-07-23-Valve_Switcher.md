@@ -31,11 +31,11 @@ The control program is an interface between an Arduino Uno and a Rust binary run
 
 Communication used the `serialport` [rust crate](https://github.com/serialport/serialport-rs), which is similar in API to PySerial. Establishing a connection is as easy as entering the parameters like so: 
 
-```Rust
+{% highlight Rust %}
 let builder = serialport::new("/dev/ttyACM0", 9600).timeout(Duration::from_millis(3500)).data_bits(DataBits::Eight).stop_bits(StopBits::One);
 
 let mut port = builder.open().expect("failed to connect."); 
-```
+{% endhighlight %}
 
 The major issue establishing a connection is on the Arduino's end. The uno I used takes ~3s to reset and begin communicating after a new serial link is established, which means that the rust code has to wait to send instructions. 
 
