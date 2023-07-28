@@ -5,7 +5,8 @@ title: "Contributions to my Stream Ecology Capstone"
 
 # Background
 
-Stream Ecology was my capstone course for the graduate program at SPEA, and was a great way to practice and refine some of the skills
+Stream Ecology was my capstone course for the graduate program at SPEA, and was a great way to put my ecology and data analysis skills to work on a real case study. 
+
 I enjoyed using in other courses with more independence. The basic structure of the class was to learn about one aspect of an EPA rapid bioassessment
 each week, practice sample collection and analysis for that portion in field/lab days, and then write about our findings in reports.
 

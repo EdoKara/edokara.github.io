@@ -150,7 +150,7 @@ fn write_flags(routime:u64,
         let now = get_time!();
         let displaynow = get_time_display!(now);
 
-        wtr.write_record(vec![displaynow.to_string(), position.to_string()])?;
+        wtr.write_record(vec![displaynow.to_string(), position.to_stcontrol automated valve switching. ring()])?;
 
     wtr.flush()?;
     Ok(())
