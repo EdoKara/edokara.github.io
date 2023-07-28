@@ -24,12 +24,12 @@ To read the data out, the program:
 
 I used the `pyserial` package for serial communication. This part is as simple as can be; matching the port name and a timeout allows robust communication across the port:
 
-```Python
+{% highlight python %}
 
 portpath = "/dev/ttyUSB0"
 ser = serial.Serial(portpath, timeout=1)
 
-```
+{% endhighlight %}
 
 
 ### Parsing the XML Packets
@@ -38,13 +38,13 @@ This part isn't quite so easy, but is helped greatly by the `beautifulsoup` pack
 
 After initializing the raw XML string into a BS4 interpreter object, I was able to query it like so:
 
-```Python
+{% highlight python %}
 co2 = conv_str_to_exp(str(i.find("co2").string)) 
-```
+{% endhighlight %}
 
 The inner part of this comprehension (from an iterator) finds the "co2" tag in the XML object and unwraps the raw string. The outer function is custom and comes from a quirk of the li-cor's numeral notation, which is of the from "nnnne-n" or "nnnnen" (basically exponential notation). The conversion function works like this: 
 
-```Python
+{% highlight python %}
 
 def conv_str_to_exp(inputstr): #useful function, converts from 1.0380e-2 format to the actual float
 
@@ -72,13 +72,13 @@ def conv_str_to_exp(inputstr): #useful function, converts from 1.0380e-2 format 
 
         return(preexp*(10**exp))
 
-```
+{% endhighlight %}
 
 The regex is probably the most complicated part of this function, and took me a little while to fully validate. It matches either everything before an e in a numeral or everything after an e in a numeral, with the option for an intervening sign. Then it takes the group from the resulting regex, converts it to float, and exponentiates the value to get a normally-readable format. The try-except logic is to ensure that, if the query fails, a 0 will be output into the data (10^1). 
 
 This logic is applied to each of the parameters of interest for the final CSVs, building to: 
 
-```Python
+{% highlight python %}
 
 for i in subset: #iterate over the subsets in the <data> tag
                 #testing every conversion for a nonetype error;
@@ -103,11 +103,11 @@ for i in subset: #iterate over the subsets in the <data> tag
                 except:
                     cellpres = np.nan
 
-```
+{% endhighlight %}
 
 These values are then put together as elements in a row for the exporting dataframe like so:
 
-```Python
+{% highlight python %}
 
 line_to_read = pd.Series(data={"Datetime": datetime.now().strftime(format="%d/%m/%Y %H:%M:%S"), 
                       "co2":co2, 
@@ -117,7 +117,7 @@ line_to_read = pd.Series(data={"Datetime": datetime.now().strftime(format="%d/%m
                 sl.append(line_to_read) #makes a pandas series out of the values from the searched tags in data. this is where I convert
                 #number formats.
 
-```
+{% endhighlight %}
 
 ### Writing to CSV Regularly
 
