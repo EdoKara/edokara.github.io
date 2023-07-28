@@ -123,12 +123,12 @@ line_to_read = pd.Series(data={"Datetime": datetime.now().strftime(format="%d/%m
 
 The program buffers 20min of data in an internal `pandas` dataframe with the command
 
-```python
+{% highlight python %}
 for l in sl: #for each series (i.e. line of data reported):
                 test = pd.concat([test, l.to_frame().T], ignore_index=True, axis=0, join='outer') # appends to the output file
                 #print(test) #diagnostic print to see that things are working OK
 
-```
+{% endhighlight %}
 
 I made this part a `for` loop in order to ensure that if the program ended up reading multiple lines at once, it would append all of them instead of dropping things. The export was accomplished with a custom function which was basically just a functionality wrapper to keep track of the program's flow a little better. 
 
