@@ -12,8 +12,7 @@ My goal with this website is to allow an expanded discussion of the work I've do
 
 ## About Me
 
-I recently graduated from the [O'Neill School of Public and Environmental Affairs](https://oneill.indiana.edu/index.html)with an M.S. in Environmental Science. My time in the O'Neill School (I usually just refer to it as SPEA) has left me with a lot of interest in continuing to grow my knowledge base. I really enjoyed digging into water policy and science issues during my degree program, and hope to continue doing so in my first position in the industry. 
-
+I recently graduated from the [O'Neill School of Public and Environmental Affairs](https://oneill.indiana.edu/index.html) with an M.S. in Environmental Science. My time in the O'Neill School (I usually just refer to it as SPEA) has left me with a lot of interest in continuing to grow my knowledge base. I really enjoyed digging into water policy and science issues during my degree program, and hope to continue doing so in my first position in the industry. 
 
 
 ## Projects and Previous work
