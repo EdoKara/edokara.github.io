@@ -132,3 +132,22 @@ for l in sl: #for each series (i.e. line of data reported):
 
 I made this part a `for` loop in order to ensure that if the program ended up reading multiple lines at once, it would append all of them instead of dropping things. The export was accomplished with a custom function which was basically just a functionality wrapper to keep track of the program's flow a little better. 
 
+### Error Handling
+
+Error handling was really important for this project to ensure stability. THe file is wrapped with `try...except` cases such that whether or not it gets a valid read from the serial port, it will continue trying instead of crashing out. I also added a graceful keyboardinterrupt handler. Instead of losing the data buffer when using `ctrl+c` to end the program, the lines
+
+{% highlight python %}
+
+except KeyboardInterrupt:
+        export_file_now(csv=test, filepath=filepath)
+        print("\n exported successfully!")
+        print("quitting.")
+        exit()
+
+{%endhighlight%}
+
+export the buffer like they would for a full 20min aggregation of data, then exit the program. This allows more flexibility with stopping and starting the program. 
+
+## Outcomes
+
+This was a very straightforward project after getting the error handling and regex logic set up correctly, and making sure things synchronized appropriately. I have been really impressed by the program's stability as well. It has never ever crashed, provided it's plugged into the li-cor. The result is a wonderfully continuous datastream from the LI-COR, which will hopefully be very useful moving forward. 
