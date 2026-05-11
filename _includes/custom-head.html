@@ -1,0 +1,17 @@
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Transform Rouge-wrapped blocks into plain <pre class="mermaid"> elements
+    document.querySelectorAll('pre > code.language-mermaid').forEach(function (code) {
+      const pre = document.createElement('pre');
+      pre.classList.add('mermaid');
+      pre.textContent = code.textContent; // textContent auto-decodes HTML entities
+      code.parentElement.replaceWith(pre);
+    });
+
+    mermaid.initialize({ startOnLoad: false }); // we call run() manually below
+    mermaid.run({ querySelector: '.mermaid' });
+  });
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
