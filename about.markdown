@@ -24,4 +24,4 @@ data transformation, analysis, and understanding for my organization,
 including pushing the frontiers of what is possible for us given our
 collection infrastructure.
 
-I can also provide a [general-purpose (read: incomplete) version of my resume]({{site.url}}/download/andrew_j_brown_base_resume.pdf).
+I can also provide a [general-purpose (read: incomplete) version of my resume](edokara.github.io/download/andrew_j_brown_base_resume.pdf).
